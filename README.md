@@ -18,9 +18,6 @@ mfa model download dictionary spanish_mfa
 
 ```sh
 bash convert.sh # .mp4 -> .flac
-mfa align ./ spanish_mfa spanish_mfa ./dist/
+mfa align_one temp/A0_piojo.flac temp/A0_piojo.txt spanish_mfa spanish_mfa dist
 ```
-```
-Error: FeatureGenerationError:
-No utterances had features
-```
+- `mfa align`하면 에러남. `mfa align_one`만 잘 됨
